@@ -70,7 +70,7 @@ Available to CA only. This function will start a chat with the MMA with the `mes
 Available to CA only. This function will read the entire contents of the memory file to the CA.
 
 ### rewrite_memory(message)
-Available to MMA only. This function will rewrite the entire contents of the memory file to MMA.
+Available to MMA only. This function will rewrite the entire contents of the memory file.
 
 ### read_from_memory()
 Available to MMA only. This function will read the entire contents of the memory file to the CA.
@@ -112,9 +112,10 @@ If you ask the CA if it remembers something, or if it thinks it needs more conte
 # Future Work
 The author believes this paradigm of memory storage will prove useful in many flows, but that there remains much work to be done to see the true potential. In no particular order, here are some further areas of study you might consider:
   1. Have CA pass a hint in `read_from_memory_intent` that says what it is looking for, and have the MMA read the full memory and return only the pertinent details.
-  2. Devise a "read, reflect, reorganise" routine for the MMA (or other) to be able to consider rewriting the memory for organization and conciseness *without* needing to add new information.
-  3. Devise a "short term memory" which is unmanaged and differently organized - perhaps as a scratch pad for the CA. Also, a "short to long" routine to smartly transfer short term memory to long, perhaps even excluding some short term memories entirely.
-  4. Leverage the abilities for more robust problem solving.
+  2. Modify `write_to_memory_intent` to be able to receive a list of memories so CA can store multiple memories in one call.
+  3. Devise a "read, reflect, reorganise" routine for the MMA (or other) to be able to consider rewriting the memory for organization and conciseness *without* needing to add new information.
+  4. Devise a "short term memory" which is unmanaged and differently organized - perhaps as a scratch pad for the CA. Also, a "short to long" routine to smartly transfer short term memory to long, perhaps even excluding some short term memories entirely.
+  5. Leverage the abilities for more robust problem solving.
 
 And many more - this stuff is seriously exciting.
 
