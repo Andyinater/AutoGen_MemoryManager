@@ -89,6 +89,7 @@ The author believes this paradigm of memory storage will prove useful in many fl
   1. Have CA pass a hint in `read_from_memory_intent` that says what it is looking for, and have the MMA read the full memory and return only the pertinent details.
   2. Devise a "read, reflect, reorganise" routine for the MMA (or other) to be able to consider rewriting the memory for organization and conciseness *without* needing to add new information.
   3. Devise a "short term memory" which is unmanaged and differently organized - perhaps as a scratch pad for the CA. Also, a "short to long" routine to smartly transfer short term memory to long, perhaps even excluding some short term memories entirely.
+  4. Leverage the abilities for more robust problem solving.
 
 And many more - this stuff is seriously exciting.
 
