@@ -6,6 +6,7 @@ The project is the result of exploratory work in developing a paradigm for stabl
 
 ## Example Chat 
 Not theoretically - this is from the system as-is.
+
 *Chat Starts*
 >AI: (Reads initial memory) -> User dislikes cilantro| User is craving sushi, not craving sushi| User is allergic to rice| User's friend Kyle is a game developer, no longer friends with Kyle|
 >
