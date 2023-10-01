@@ -1,8 +1,6 @@
 # AutoGen_MemoryManager
 This repository demonstrates how a simple memory file can be incorporated into an Agents routine using the AutoGen framework. 
 
-# Table of Contents
-
 # Overview
 The project is the result of exploratory work in developing a paradigm for stable, reliable, and automated memory management for an AutoGen Agent. While just a proof of concept, the author believes that such a method would prove useful in a variety of workflows, either simply as-is for a conversational style memory, or with some tweaks for other tasks which may benefit from having dependable memory/facts. Please note that the current configuration lacks some QoL in terms of it's execution; the user must manually control some portions of the flow, but these could be automated with minimal effort. Feedback and collaboration is welcomed and encouraged. 
 
