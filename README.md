@@ -9,7 +9,7 @@ The project is the result of exploratory work in developing a paradigm for stabl
 A text file serves as the "Long Term Memory". It contains a series of thoughts/ideas/memories seperated by a delimiter, in this case '|'. An example of a semi-populated memory could be: "Users name is Andy| User is allergic to peanuts, shellfish| User likes heavy metal music|"
 
 ## Agents
-There are two Agents: The ConversingAgent, and the MemoryManagerAgent. They work hand-in-hand to both maintain a smooth conversation with the user while managing memories in the background.
+There are two Agents: The ConversingAgent, and the MemoryManagerAgent. They work hand-in-hand to both maintain a smooth conversation with the user while managing memories in the background. Take note of the system prompts for the ConversingAgent and MemoryManagerAgent - they are critically important to how the system runs.
 
 ### ConversingAgent
 The ConversingAgent (CA) chats with the User, maintaining a helpful assistant persona. It is given access to two functions: `write_to_memory_intent` and `read_from_memory_intent`. 
@@ -35,6 +35,8 @@ UserProxy is the controlled by the Human user, and is used in handling function 
 UserProxy_ForFunctions is used in handling function calls from the MMA.
 
 ## Functions
+
+Functions that are available to agents. Take note of the function and parameter descriptions in each agent - they are critically important to how the system runs.
 
 ### write_to_memory_intent(message)
 Available to CA only. This function will start a chat with the MMA with the `message` as the initial message.
