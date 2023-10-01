@@ -55,6 +55,9 @@ Available to MMA only. This function will read the entire contents of the memory
 # Getting Started
 The author assumes you have [installed AutoGen](https://github.com/microsoft/autogen#installation) and have it running on your system. 
 
+## Preparing Memory Path
+Take note of `mem_path` in `LongTermMemory_Example.py`: This is the path to the memory file that will be used. While the *.txt does not need to exist, the directory "LTM_Test", or whichever is used, must be in the active directory.
+
 ## Starting a chat
 Run the file with `python LongTermMemory_Example.py`
 
