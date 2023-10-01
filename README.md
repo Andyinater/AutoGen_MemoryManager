@@ -4,7 +4,31 @@ This repository demonstrates how a simple memory file can be incorporated into a
 # Overview
 The project is the result of exploratory work in developing a paradigm for stable, reliable, and automated memory management for an AutoGen Agent. While just a proof of concept, the author believes that such a method would prove useful in a variety of workflows, either simply as-is for a conversational style memory, or with some tweaks for other tasks which may benefit from having dependable a memory/facts list. Please note that the current configuration lacks some QoL in terms of it's execution; the user must manually control some portions of the flow, but these could be automated with minimal effort. Feedback and collaboration is welcomed and encouraged. 
 
+## Example Chat 
+Not theoretically - this is from the system as-is.
+*Chat Starts*
+>AI: (Reads initial memory) -> User dislikes cilantro| User is craving sushi, not craving sushi| User is allergic to rice| User's friend Kyle is a game developer, no longer friends with Kyle|
+>
+>AI: Hello! How can I assist you today?
+>
+>User: You remember kyle?
+>
+>AI: Yes, I remember that you mentioned Kyle in a previous conversation. How can I help you with regards to Kyle?
+>
+>User: What do you remember about kyle?
+>
+>AI: From what I remember, you mentioned that Kyle is a game developer. However, you also mentioned that you are no longer friends with Kyle. Is there anything specific you would like to know or discuss about Kyle?
+>
+>User: we're friends again!
+>
+>AI: (Tries to add to memory) > User is friends with Kyle
+>
+>MemoryAI: (Rewrites memory to incorporate new information) -> User dislikes cilantro| User is craving sushi, not craving sushi| User is allergic to rice| User's friend Kyle is a game developer
+>
+>AI: That's great to hear! I'm glad you and Kyle are friends again. If there's anything else you'd like to share or discuss, feel free to let me know.
+
 # How it Works
+
 ## Memory File
 A text file serves as the "Long Term Memory". It contains a series of thoughts/ideas/memories seperated by a delimiter, in this case '|'. An example of a semi-populated memory could be: "Users name is Andy| User is allergic to peanuts, shellfish| User likes heavy metal music|"
 
