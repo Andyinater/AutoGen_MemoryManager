@@ -76,7 +76,7 @@ When the CA determines something noteworthy to remember, it will make this funct
   1. The MMA, upon receiving the memory message, will call `read_from_memory` to see the preexisting memory contents
   2. The MMA will call `rewrite_memory`, rewriting the memory file to preserve the old memories while simultaneously including the new.
 
-At this point, the prompt will ask the user to give feedback to the MMA. Simply type `exit` and hit enter to end the conversation with MMA. If you do not do this, the flow will not run correctly. Sorry, still learning.
+At this point, the prompt will ask the user to give feedback to the MMA. Simply type hit enter to auto-reply end the conversation with MMA.
 
 After the chat with MMA has ended, the CA should pick up the conversation from where it left off, while likely commenting on the last message which prompted the memory storage.
 
